@@ -1,0 +1,81 @@
+@import '../../variable.scss';
+
+.about-page {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    flex-direction: column;
+    background: $secondary-color;
+    box-shadow: 0px 7px 12px 2px rgba(0, 0, 0, 0.26);
+
+    #info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #profile-photo {
+            width: 200px;
+            height: 200px;
+            margin: 40px 0;
+            border-radius: 50%;
+            background: url('../../images/profile-photo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 10px 5px 5px 2px rgba(0,0,0,0.26);
+        }
+        #details {
+            width: 35%;
+            margin: 30px 0 30px 50px;
+
+            #name {
+                color: #3d3d3d;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            #about-content {
+                color: #3d3d3d;
+                font-size: 15px;
+                margin-bottom: 50px;
+            }
+            #resume-btns {
+                display: flex;
+                align-items: center;
+            }
+            #or-text {
+                font-size: 14px;
+                margin-right: 10px;
+            }
+            #download-cv {
+                border: none;
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 600;
+                margin-right: 10px;
+                text-decoration: none;
+                text-transform: uppercase;
+                background: $primary-color;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            #details {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            #details {
+                width: auto;
+                margin: 30px;
+                text-align: center;
+                #resume-btns {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

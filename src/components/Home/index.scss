@@ -1,0 +1,71 @@
+@import '../../variable.scss';
+
+.home-page {
+    color: #fff;
+    position: relative;
+    padding: 20px 50px;
+    background: url('../../images/background-work.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    backface-visibility: visible;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.75;
+        background: #000;
+    }
+    .home-content {
+        width: 70%;
+        display: flex;
+        z-index: 1000;
+        margin: 8% auto;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sub-title {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-contact {
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: transparent;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            &:hover, &:focus {
+                color: #000;
+                outline: none;
+                font-weight: 600;
+                background: $primary-color;
+                border: 1px solid $primary-color;
+            }
+        }
+        @media screen and (max-width: 768px){
+            width: 100%;
+            .title {
+                font-size: 32px;
+            }
+            .sub-title {
+                font-size: 16px;
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        padding: 20px;
+    }
+}

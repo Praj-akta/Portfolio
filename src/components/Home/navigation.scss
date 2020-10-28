@@ -1,0 +1,61 @@
+@import '../../variable.scss';
+
+.navigation-bar {
+    display: flex;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 1000;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    justify-content: space-between;
+    .links {
+        display: flex;
+        div {
+            padding: 0 15px;
+            text-transform: capitalize;
+            &:hover{
+                cursor: pointer;
+                color: $primary-color;
+            }
+        }
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
+.active-link {
+    color: $primary-color;
+}
+@media screen  and (max-width: 768px){
+    .navigation-bar {
+        padding-bottom: 15px;
+        .hamburger-menu {
+            display: block;
+            div {
+                width: 30px;
+                height: 5px;
+                margin-bottom: 5px;
+                background: #fff;
+            }
+        }
+        .links {
+            display: none;
+        }
+    }
+    .mobile-menu {
+        width: 100%;
+        opacity: 0.98;
+        background: #111;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10001;
+        div {
+            font-size: 25px;
+            padding: 15px 0;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}

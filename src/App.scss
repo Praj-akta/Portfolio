@@ -1,0 +1,55 @@
+@import './variable.scss';
+
+.color-blue {
+    color: $primary-color;
+}
+
+.bg-color-blue {
+    background: $primary-color;
+}
+
+.content-header {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    &__design{
+        display: flex;
+        justify-content: center;
+        div {
+            width: 10px;
+            height: 10px;
+            margin-top: 3px;
+            margin-right: 5px;
+            position: relative;
+            border-radius: 15px;
+            background: $primary-color;
+        }
+        div:first-child::before, div:last-child::after {
+            content: "";
+            width: 50px;
+            height: 2px;
+            position: absolute;
+            opacity: 0.4;
+            top: 4px;
+            background: $primary-color;
+        }
+        div:first-child::before {
+            right: 10px;
+        }
+        div:last-child::after {
+            left: 10px;
+        }
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+.scroll-up img {
+    width: 35px;
+    padding-top: 10px;
+}
