@@ -70,8 +70,9 @@
       }
     }
     .content {
-      padding: 20px 30px;
-      background-color: white;
+      color: #eee;
+      padding: 15px;
+      background-color: #202020;
       position: relative;
       border-radius: 6px;
       img {
@@ -89,6 +90,19 @@
       .view-more {
         display: none;
       }
+      .description {
+        color: gray;
+        font-size: 14px;
+      }
+    }
+    .link-icon {
+      width: 30px !important;
+      margin: 0 !important;
+      filter: invert(1);
+    }
+    .link-title {
+      color: #eee !important;
+      text-decoration: none !important;
     }
   }
   @media screen and (max-width: 992px) {

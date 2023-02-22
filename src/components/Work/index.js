@@ -1,82 +1,65 @@
 import React, { useState } from "react";
-import img4 from "../../images/OCR.jpg";
-import img5 from "../../images/Housing_sales.PNG";
-import img2 from "../../images/data-analytics.jpg";
-import img3 from "../../images/face_recognition.jpg";
-import img1 from "../../images/insurance.jpg";
-import img6 from "../../images/web_scrapping.png";
+import img1 from "../../images/EMS.png";
+import img2 from "../../images/amazon-clone.png";
+import img3 from "../../images/netflix-clone.png";
+import linkImg from "../../images/link.png";
 import "./index.scss";
 
 const Work = () => {
   const [workList, setWorkList] = useState([
     {
       id: 1,
-      imgUrl: img2,
+      imgUrl: img3,
       showFullDescription: false,
-      duration: "May 2021",
-      title: "Time Series Analysis on ADA stock",
-      description: `Used Binance API to fetch data for ADA for the period of 3 Years. Used ARIMA, Holt-Winters, and LSTM model to train model and predict future stock prices.
-                    Created Actual vs Predicted Plot for all the models. Based on metrics and the Plot LSTM performed better of all.`,
+      title: "Netflix Clone",
+      titleLink: "https://react-netflix-clone-21b46.web.app",
+      subtitle: "(HTML/CSS, Tailwind CSS, React JS, Redux, Firebase, Axios)",
+      description: `
+        Cloned Netflix website, using HTML/CSS, Tailwind CSS, React Hooks, Redux, Firebase, Axios.
+        Website has ability to create an account or sign in with existing credentials, also adding favorites movies to “My
+        List” option.
+        Used Firebase for storing the user's data (email id and password). Fetched data through TDMB (online Movie’s API)
+        axios.`,
     },
     {
       id: 2,
-      imgUrl: img1,
+      imgUrl: img2,
       showFullDescription: false,
-      duration: "November 2020",
-      title: "Health Insurance Cross Sell Prediction",
-      description: `The Project is Predicting Health Insurance Owners who will be interested in Vehicle Insurance. Checked for null values within the dataset, performed data cleaning to remove null values. 
-                    Performed Exploratory Data Analysis to derive insights based on Gender, age, and annual premium. Created a Correlation Plot to check correlation amongst target and independent variable.
-                    Performed Over sampling to handle imbalance data. Implemented Random Forest, Gradient Boosting, Extended Gradient Boosting, and Sequential model using sigmoid and relu activation function.  `,
-    },
-    {
-      id: 3,
-      imgUrl: img5,
-      showFullDescription: false,
-      duration: "October 2020",
-      title: "Housing Sales Analysis",
-      description: `Imported the dataset to leverage the power of tableau to perform data analysis and data visualization 
-                        by building and deploying dashboard using  line charts, pie charts and bar plots to show 
-                        difference in sales prices based on year built, heating amenity and roof and house structure.
-                        Helps in investing in house which gives maximum ROI.  `,
+      title: "Amazon Clone",
+      subtitle:
+        "(HTML/CSS, Bootstrap, React JS, Redux, Node JS, Firebase, Stripe)",
+      titleLink: "https://clone-6e9aa.web.app",
+      description: `
+        Cloned Amazon website, using HTML, CSS/SCSS, React JS, Redux, Firebase and Stripe, Express JS.
+        Website has ability to add product or remove product from the cart, order history is maintained under 'Return & orders'
+        section.
+        Leveraged Firebase for storing the user's data (email id and password) and orders history of user. Used Stripe for
+        authentication and authorization of payments
+        Node JS, Redux and React JS for hosting the payment method, for global storage and data retrieval, for single page
+        application respectively.`,
     },
     {
       id: 4,
-      imgUrl: img3,
-      title: "Face Recognition",
+      imgUrl: img1,
+      title: "Employee Management System",
       showFullDescription: false,
-      duration: "August 2020",
-      description: `  Developed a python program using OpenCV to generate train and test dataset of facial images.
-                            Rendered a neural network model by using VGG16 transfer learning technique, keras and TensorFlow for feature extraction from images. Performed  hyperparameter tunning and saved model in h5 format.
-                        	Imported the model, provided external IP webcam support to use external devices for effective face recognition.
-            `,
-    },
-    {
-      id: 5,
-      imgUrl: img4,
-      title: "OCR",
-      showFullDescription: false,
-      duration: "April 2020",
-      description: `Developed an OCR application with help of python packages; Tkinter, OpenCV, and PyTesseract. Application has
-            capability to crop, resize, rotate, and invert image with accurate text extraction from image.`,
-    },
-    {
-      id: 6,
-      imgUrl: img6,
-      title: "WEB Scrapping",
-      showFullDescription: false,
-      duration: "March 2020",
-      description: `Developed a Program in python to perform webscarpping using beautiful soup 
-                        on flipkart shopping site for mobile devices. Created dataframe of extracted data and exported it to CSV.`,
+      subtitle:
+        "(HTML/CSS, Bootstrap, React JS, React Hooks, Node JS, MongoDB)",
+      description: `
+        Developed an employee management system, where employee’s data can be created, updated, and deleted by performing CRUD operations.
+        Created functional components using React hooks, also MongoDB is used for data Storage. API integration is done
+        using Fetch API calls. Website has been developed and designed using HTML/CSS, Bootstrap and React JS.
+      `,
     },
   ]);
 
   function onViewMore(data) {
     const res = workList.map((value, index) => {
-      if(parseInt(value.id) === parseInt(data.id)) {
+      if (parseInt(value.id) === parseInt(data.id)) {
         value.showFullDescription = !value.showFullDescription;
         return value;
       }
-      return value
+      return value;
     });
     setWorkList(res);
   }
@@ -89,31 +72,42 @@ const Work = () => {
       </div>
       <div className="timeline">
         {workList.map((value, index) => {
-          const { 
-              imgUrl, 
-              title, 
-              duration, 
-              description, 
-              showFullDescription } = value;
+          const { imgUrl, titleLink, title, description, showFullDescription } =
+            value;
           const containerClass = index % 2 === 0 ? "left" : "right";
-          const descriptionClass = showFullDescription 
-            ? "view-full-description" : "";
+          const descriptionClass = showFullDescription
+            ? "view-full-description"
+            : "";
 
           return (
             <div className={`container ${containerClass}`} key={index}>
-              <div className="content" data-aos="zoom-in"> 
+              <div className="content" data-aos="zoom-in">
                 <img src={imgUrl} alt="timeline-png" />
-                <h4> {title} </h4>
-                <div> 
-                  <div className={`description ${descriptionClass}`}> 
-                    {description}  
+                {titleLink ? (
+                  <a href={titleLink} target="_blank" className="link-title">
+                    <h4>
+                      {title}
+                      <span>
+                        <img
+                          src={linkImg}
+                          alt="link-img"
+                          className="link-icon"
+                        />
+                      </span>
+                    </h4>
+                  </a>
+                ) : (
+                  <h4> {title} </h4>
+                )}
+
+                <div>
+                  <div className={`description ${descriptionClass}`}>
+                    {description}
                   </div>
-                  <div className="view-more" 
-                      onClick={_ => onViewMore(value)}> 
-                      {showFullDescription ? "View less" : "View more"}
+                  <div className="view-more" onClick={(_) => onViewMore(value)}>
+                    {showFullDescription ? "View less" : "View more"}
                   </div>
                 </div>
-                <div id="duration"> {duration} </div>
               </div>
             </div>
           );

@@ -1,14 +1,16 @@
 @import "../../variable.scss";
 
 .sidebar-container {
-  display: block;
-  padding: 20px;
+  display: flex;
+  padding: 5px 20px;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 100;
   text-align: center;
   background: #000;
+  align-items: center;
+  justify-content: space-between;
 
   .title {
     font-size: 22px;
@@ -18,13 +20,12 @@
     font-family: "Playfair Display", Georgia, serif;
   }
   .navigation-bar {
-    width: 65%;
+    width: 400px;
     float: right;
     color: #fff;
-    font-size: 18px;
     .links {
       display: flex;
-      font-size: 18px;
+      font-size: 12px;
       text-transform: uppercase;
       justify-content: space-between;
       div {
@@ -67,11 +68,55 @@
   .mobile-menu {
     display: none;
   }
-  @media screen and (max-width: 992px) {
-    .navigation-bar {
-      width: 80%;
+  .navbar-text {
+    display: flex;
+    align-items: center;
+  }
+  .social-icon {
+    display: inline-block;
+    margin-left: 14px;
+    a {
+      align-items: center;
+      background: #000;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      height: 42px;
+      justify-content: center;
+      line-height: 1;
+      margin-right: 10px;
+      width: 42px;
+      text-decoration: none;
+      i {
+        color: #fff;
+        font-size: 23px;
+      }
+    }
+    :hover {
+      background-color: #2c98f0;
     }
   }
+  .send-email {
+    button {
+      cursor: pointer;
+      background-color: #000;
+      border: 1px solid #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 10px;
+      padding: 7px 10px;
+      position: relative;
+      transition: .3s ease-in-out;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    :hover {
+      background-color: #2c98f0;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .navigation-bar {
       .hamburger-menu {

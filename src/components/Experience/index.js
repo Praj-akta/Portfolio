@@ -6,26 +6,26 @@ function Experience() {
     {
       id: 1,
       showFullDescription: false,
-      date: "January, 2021 - June 2021",
-      title: "Machine Learning Software Engineer Intern, Dtonomy Inc.",
+      date: "May, 2019 - October, 2022",
+      title: "React JS Web Developer at Infojini INC.",
       description: [
-        "Built and Refined random forest model for pattern discovery by performing feature addition and hyperparameter tuning. Deployed the model as a service on the Docker container to identify malicious URLs and provide analysis.",
-        "Constructed an O365 node-red workflow using NodeJS, JavaScript, HTML, CSS, and python to set inbox rules to block spam mails with keyword and to block sender with id, leveraging MS Graph API and Azure app registration.",
-        "Developed selenium script automating request and receipt of consent for scopes of graph API used to access and set the inbox rules. Created inject node in node-red to trigger a workflow based on time, time zone and various data types.",
-        "Created a PowerShell node in nod-red to run the PowerShell script. Achieved OS independence for the node by installing PowerShell dependencies into the docker container and deploying the node on top of the container.",
+        "Developed websites, mobile applications, and landing pages from wireframe through deployment.",
+        "Planned development as per Standardized output through a new, responsive, mobile-first approach and strategy. Enhanced UX and UI designs for technical feasibility.",
+        "Collaborated with product team members for feature gathering and sprint planning.",
+        "Developed Unit and Load test cases to improve application architecture, maintainability, and scalability. Designed an interactive, dynamic HR portal and Veteran websites using HTML, CSS with modern JavaScript frameworks as React, Angular and React Native for better experience.",
       ],
     },
     {
       id: 2,
       showFullDescription: false,
-      date: "August 2018 - December 2019",
+      date: "August, 2018 - May, 2019",
       title:
-        "Associate Consultant (DevOps Developer), Mindcraft Software PVT.LTD.",
+        "Web Developer Intern at GVK, Mumbai International Airport.",
       description: [
-        "Leveraged DevOps technology; Jenkins, docker, and chef for parameterized automated deployment of MySQL server/client as a cluster on multiple servers simultaneously which reduced deployment time to 2 Hours from a week.",
-        "Developed CICD pipeline for automated deployment of  Loan disbursement Web application on Tomcat server running on AWS EC2 instance for DEV/UAT/PROD environment using sole Jenkins job, achieved end to end testing.",
-        "Developed and triggered Shell/Python scripts using cron jobs and Jenkins to perform database/WAR file backup, user/database/table creation, set DB access rights for user as per database design, and for health monitoring of service.",
-        "Documented Proof of Concept of engineered software, CICD pipeline, and DB design for Universal Overseas Bank, Singapore and Fullerton, India, worked under Agile SDLC. Working knowledge of finance and insurance sector.",
+        "Worked with customers for requirement gathering and understand the scope of the project. Conducted research, gathered information from multiple sources and presented results.",
+        "Designed user friendly web pages using HTML, CSS and REACT JS.",
+        "Performed load, unit testing and provided scaling parameters to infra team.",
+        "Prioritized and accomplished multiple tasks within established timeframes.",
       ],
     },
   ]);

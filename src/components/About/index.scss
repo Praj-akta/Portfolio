@@ -2,21 +2,21 @@
 
 .about-page {
   .about-us-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     .profile-photo {
       padding: 15px;
       text-align: center;
-      max-height: 315px;
-      max-width: 230px;
+      max-height: 500px;
+      max-width: 400px;
       background: #fff;
       box-shadow: 0 4px 6px rgba(0,0,0,.3);
       img {
-        max-width: 200px;
+        max-width: 300px;
       }
     }
     .details {
-      margin-left: 4rem;
+      margin-left: 2rem;
       color: #5d5d5f;
       font-size: 15px;
       padding: 20px 30px;
