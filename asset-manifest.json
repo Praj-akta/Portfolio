@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.2ebd69af.chunk.css",
+    "main.js": "/Portfolio/static/js/main.8f1ee92a.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.8f1ee92a.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.f112aacb.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f112aacb.js.map",
+    "static/js/2.451b91fd.chunk.js": "/Portfolio/static/js/2.451b91fd.chunk.js",
+    "static/js/2.451b91fd.chunk.js.map": "/Portfolio/static/js/2.451b91fd.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.2ebd69af.chunk.css.map": "/Portfolio/static/css/main.2ebd69af.chunk.css.map",
+    "static/js/2.451b91fd.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.451b91fd.chunk.js.LICENSE.txt",
+    "static/media/EMS.15df00a0.png": "/Portfolio/static/media/EMS.15df00a0.png",
+    "static/media/Prajakta_resume.74aa0066.pdf": "/Portfolio/static/media/Prajakta_resume.74aa0066.pdf",
+    "static/media/amazon-clone.566fec32.png": "/Portfolio/static/media/amazon-clone.566fec32.png",
+    "static/media/arrow-up.ba1d3183.svg": "/Portfolio/static/media/arrow-up.ba1d3183.svg",
+    "static/media/link.34dbb9da.png": "/Portfolio/static/media/link.34dbb9da.png",
+    "static/media/netflix-clone.8b89fdbb.png": "/Portfolio/static/media/netflix-clone.8b89fdbb.png",
+    "static/media/profile.d6a4725b.jpg": "/Portfolio/static/media/profile.d6a4725b.jpg",
+    "static/media/index.scss": "/Portfolio/static/media/wallpaper.740bf89f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f112aacb.js",
+    "static/js/2.451b91fd.chunk.js",
+    "static/css/main.2ebd69af.chunk.css",
+    "static/js/main.8f1ee92a.chunk.js"
+  ]
+}
