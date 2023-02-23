@@ -119,6 +119,7 @@
 
   @media screen and (max-width: 768px) {
     .navigation-bar {
+      display: flex;
       .hamburger-menu {
         display: block;
         float: right;
@@ -140,6 +141,7 @@
       color: #fff;
       background: #111;
       position: absolute;
+      top: 65px;
       left: 0;
       right: 0;
       div {
