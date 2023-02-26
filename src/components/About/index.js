@@ -16,7 +16,7 @@ const About = () => {
           <p>
             Hi <strong>Fellas</strong>, I am a current Student at Conestoga
             College. I'm pursuing my Post graduation course in Web Development and my current
-            GPA is 3.80
+            GPA is 3.8/4
           </p>
           <p>
             Before Post grad, I was working as a React Web Developer
