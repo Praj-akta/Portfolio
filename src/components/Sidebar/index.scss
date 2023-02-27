@@ -159,4 +159,12 @@
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    .social-icon {
+      display: flex;
+    }
+    .send-email button {
+      width: 100px;
+    }
+  }
 }
