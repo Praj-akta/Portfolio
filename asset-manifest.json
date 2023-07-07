@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4aa93ab7.chunk.css",
-    "main.js": "/Portfolio/static/js/main.0989ce4f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0989ce4f.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.3a8ed659.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.3a8ed659.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f112aacb.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f112aacb.js.map",
     "static/js/2.451b91fd.chunk.js": "/Portfolio/static/js/2.451b91fd.chunk.js",
@@ -10,8 +10,9 @@
     "index.html": "/Portfolio/index.html",
     "static/css/main.4aa93ab7.chunk.css.map": "/Portfolio/static/css/main.4aa93ab7.chunk.css.map",
     "static/js/2.451b91fd.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.451b91fd.chunk.js.LICENSE.txt",
+    "static/media/1.c20bc272.png": "/Portfolio/static/media/1.c20bc272.png",
     "static/media/EMS.15df00a0.png": "/Portfolio/static/media/EMS.15df00a0.png",
-    "static/media/Prajakta_resume.74aa0066.pdf": "/Portfolio/static/media/Prajakta_resume.74aa0066.pdf",
+    "static/media/Prajakta_Limje_Resume.c2a1b1da.pdf": "/Portfolio/static/media/Prajakta_Limje_Resume.c2a1b1da.pdf",
     "static/media/amazon-clone.566fec32.png": "/Portfolio/static/media/amazon-clone.566fec32.png",
     "static/media/arrow-up.ba1d3183.svg": "/Portfolio/static/media/arrow-up.ba1d3183.svg",
     "static/media/link.34dbb9da.png": "/Portfolio/static/media/link.34dbb9da.png",
@@ -23,6 +24,6 @@
     "static/js/runtime-main.f112aacb.js",
     "static/js/2.451b91fd.chunk.js",
     "static/css/main.4aa93ab7.chunk.css",
-    "static/js/main.0989ce4f.chunk.js"
+    "static/js/main.3a8ed659.chunk.js"
   ]
 }
