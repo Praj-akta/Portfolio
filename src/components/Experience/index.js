@@ -10,9 +10,12 @@ function Experience() {
       title: "React JS Web Developer at Infojini INC.",
       description: [
         "Developed websites, mobile applications, and landing pages from wireframe through deployment.",
-        "Planned development as per Standardized output through a new, responsive, mobile-first approach and strategy. Enhanced UX and UI designs for technical feasibility.",
-        "Collaborated with product team members for feature gathering and sprint planning.",
-        "Developed Unit and Load test cases to improve application architecture, maintainability, and scalability. Designed an interactive, dynamic HR portal and Veteran websites using HTML, CSS with modern JavaScript frameworks as React, Angular and React Native for better experience.",
+        "Designed an interactive, dynamic HR portal and Veteran websites using HTML, CSS with modern JavaScript frameworks as React, Angular and React Native for better experience.",
+        "Developed Unit and Load test cases to improve application architecture, maintainability, and scalability.",
+        "Designed and implemented web application along with 3rd party software integration for customer facing projects.",
+        "Build Chatbot for Infojini Talent dome website and integrated using ReactJS.",
+        "Developed responsive, mobile-first approach application which could scale with both increase in interaction complexity and volume.",
+        "Drive daily stand-up meetings to discuss new project requirements, scope, tasks, and log time estimates for the task assigned, worked with product team for deliverables and sprint planning."
       ],
     },
     {
@@ -22,10 +25,13 @@ function Experience() {
       title:
         "Web Developer Intern at GVK, Mumbai International Airport.",
       description: [
-        "Worked with customers for requirement gathering and understand the scope of the project. Conducted research, gathered information from multiple sources and presented results.",
-        "Designed user friendly web pages using HTML, CSS and REACT JS.",
-        "Performed load, unit testing and provided scaling parameters to infra team.",
+        "Ensured feasibility of 5 UI/UX designs and designed user friendly web pages using responsive design.",
+        "Updated several JavaScript projects and applications.",
+        "Worked on technical reports and made SRS, UML, and Data Flow diagrams based on the requirements.",
+        "Conducted research and assisted with new business scoping efforts.",
+        "Performed load, unit testing and provided scaling parameters to intra team.",
         "Prioritized and accomplished multiple tasks within established timeframes.",
+        "Pair programmed with senior developers throughout the project life cycle to do code reviews and enforce standard coding practice."
       ],
     },
   ]);

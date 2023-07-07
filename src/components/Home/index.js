@@ -11,7 +11,7 @@ const Home = () => {
           I'm Prajakta!
         </h1>
         <p id="sub-title" data-aos="fade-up">
-          Web Development Student at Conestoga College
+          Welcome to my Portfolio. 
         </p>
         <a
           href={resume}
