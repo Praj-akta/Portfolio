@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import img4 from "../../images/1.png";
 import img1 from "../../images/EMS.png";
 import img2 from "../../images/amazon-clone.png";
 import img3 from "../../images/netflix-clone.png";
@@ -37,6 +38,18 @@ const Work = () => {
         authentication and authorization of payments
         Node JS, Redux and React JS for hosting the payment method, for global storage and data retrieval, for single page
         application respectively.`,
+    },
+    {
+      id: 3,
+      imgUrl: img4,
+      showFullDescription: false,
+      title: "Food Website",
+      subtitle:
+        "(HTML/CSS, Bootstrap, Tailwind CSS, and JavaScript)",
+      description: `
+        Developed simple food website using just HTML, CSS, and JavaScript. Added animations to the website
+        to make it look user friendly and attractive. Using Bootstrap, the website is mobile-friendly and 
+        also checked the cross-browser compatability of this website.`,
     },
     {
       id: 4,

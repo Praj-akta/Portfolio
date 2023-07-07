@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../pdfs/Prajakta_resume.pdf";
+import resume from "../../pdfs/Prajakta_Limje_Resume.pdf";
 import "./index.scss";
 
 const Home = () => {

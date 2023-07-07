@@ -14,16 +14,15 @@ const About = () => {
         <div className="details">
           <h1> Prajakta Limje </h1>
           <p>
-            Hi <strong>Fellas</strong>, I am a current Student at Conestoga
-            College. I'm pursuing my Post graduation course in Web Development and my current
-            GPA is 3.8/4
+            Hi <strong>Fellas</strong>, I'm a recent graduate of Conestoga college with Post
+            Graduate Certificate in Web development with GPA 3.8/4. I'm looking for an opportunity
+            to work as a FrontEnd developer to produce intuitive and smooth applications and advance to full-stack development.
           </p>
           <p>
-            Before Post grad, I was working as a React Web Developer
-            in a company named Infojini Inc. and hold 3+ years of experince working
-            on Frontend project development and testing. I am quite proficient 
-            in <strong>HTML, CSS / Bootstrap, Javascript, React, React Hooks, Redux, Redux Saga, 
-            Angular JS (1.6), MongoDB, Firebase, Node JS, SQL, Git, Jira.</strong>
+            I have 3+ years of experience working as a Frontend Web Developer
+            in a company named Infojini Inc. I am quite proficient 
+            in <strong>HTML5, CSS, Javascript / Typescript, React, Hooks, Redux, Redux Saga, 
+            Angular, MongoDB, Firebase, Node JS, SQL, Git, Jira.</strong>
           </p>
         </div>
       </div>
