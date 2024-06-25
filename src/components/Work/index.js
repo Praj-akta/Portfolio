@@ -13,7 +13,7 @@ const Work = () => {
       imgUrl: img3,
       showFullDescription: false,
       title: "Netflix Clone",
-      titleLink: "https://react-netflix-clone-21b46.web.app",
+      // titleLink: "https://react-netflix-clone-21b46.web.app",
       subtitle: "(HTML/CSS, Tailwind CSS, React JS, Redux, Firebase, Axios)",
       description: `
         Cloned Netflix website, using HTML/CSS, Tailwind CSS, React Hooks, Redux, Firebase, Axios.
@@ -29,7 +29,7 @@ const Work = () => {
       title: "Amazon Clone",
       subtitle:
         "(HTML/CSS, Bootstrap, React JS, Redux, Node JS, Firebase, Stripe)",
-      titleLink: "https://clone-6e9aa.web.app",
+      // titleLink: "https://clone-6e9aa.web.app",
       description: `
         Cloned Amazon website, using HTML, CSS/SCSS, React JS, Redux, Firebase and Stripe, Express JS.
         Website has ability to add product or remove product from the cart, order history is maintained under 'Return & orders'

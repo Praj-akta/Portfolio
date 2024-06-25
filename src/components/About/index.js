@@ -15,11 +15,11 @@ const About = () => {
           <h1> Prajakta Limje </h1>
           <p>
             Hi <strong>Fellas</strong>, I'm a recent graduate of Conestoga college with Post
-            Graduate Certificate in Web development with GPA 3.8/4. I'm looking for an opportunity
+            Graduate Certificate in Web development with GPA 3.9/4. I'm looking for an opportunity
             to work as a FrontEnd developer to produce intuitive and smooth applications and advance to full-stack development.
           </p>
           <p>
-            I have 3+ years of experience working as a Frontend Web Developer
+            I have 5+ years of experience working as a Frontend Web Developer
             in a company named Infojini Inc. I am quite proficient 
             in <strong>HTML5, CSS, Javascript / Typescript, React, Hooks, Redux, Redux Saga, 
             Angular, MongoDB, Firebase, Node JS, SQL, Git, Jira.</strong>
