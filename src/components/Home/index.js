@@ -6,23 +6,19 @@ const Home = () => {
   return (
     <section className="home-page" id="home">
       <div className="col-md-6 d-flex flex-column justify-content-center">
-        <h1 id="title" data-aos="fade-up">
-          Hey,
-          I'm Prajakta!
-        </h1>
-        <p id="sub-title" data-aos="fade-up">
-          I'm a passionate Frontend Developer with expertise in crafting dynamic and user-friendly 
-          web applications. With several years of hands-on experience in technologies like React, 
-          Angular, JavaScript, HTML5, CSS3, and more, I've delivered efficient and scalable solutions 
-          that improve performance and enhance user experiences across various platforms.
+        <h1 id="title">Hey, I'm Prajakta!</h1>
+        <p id="sub-title">
+          Innovating the web with purpose and precision. As a Front-End
+          Engineer, I create accessible, user-friendly digital experiences that
+          leave a lasting impact.
         </p>
         <a
           href={resume}
           id="download-cv"
-          data-aos="fade-up"
-          download="Resume(Prajakta Limje).pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Download Resume
+          View Resume
         </a>
       </div>
     </section>

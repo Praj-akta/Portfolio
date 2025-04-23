@@ -2,21 +2,7 @@
 
 .about-page {
   .about-us-container {
-    width: 85%;
-    margin: 0 auto;
-    .profile-photo {
-      padding: 15px;
-      text-align: center;
-      max-height: 500px;
-      max-width: 400px;
-      background: #fff;
-      box-shadow: 0 4px 6px rgba(0,0,0,.3);
-      img {
-        max-width: 300px;
-      }
-    }
     .details {
-      margin-left: 2rem;
       color: #5d5d5f;
       font-size: 15px;
       padding: 20px 30px;
@@ -62,26 +48,6 @@
       cursor: pointer;
       padding: 5px 10px;
       border: 1px solid #000;
-    }
-  }
-  @media screen and (max-width: 992px) {
-    .about-us-container {
-      width: 100%;
-      .details {
-        margin-left: 1.5rem;
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .about-us-container {
-      align-items: center;
-      flex-direction: column;
-      .details {
-        margin:0;
-        h1 {
-          text-align: center;
-        }
-      }
     }
   }
 }

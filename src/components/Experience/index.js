@@ -1,81 +1,62 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.scss";
 
 function Experience() {
-  const [experienceList, modifyExperienceList] = useState([
+  const experienceList = [
     {
-      id: 1,
-      showFullDescription: false,
       date: "Jan 2024 - Present",
-      title: "System Analyst at Halton Region.",
+      title: "Frontend Software Developer",
+      company: "Regional Municipality of Halton",
       description: [
-        "Implemented new features and enhancements for Halton web applications using JavaScript, React, HTML, and Tailwind CSS to meet business requirements of maximizing performance, and improving user experience by 32%.",
-        "Designed & optimized SQL queries, stored procedures, and subqueries to enhance database performances in Microsoft SQL Server 2014.",
-        "Conducted database design & normalization, ensuring scalable & efficient data storage solutions reducing querying complexities by 12%.",
-        "Integrated PowerApps with other Microsoft 365 tools, streamlining business processes and improving user efficiency.",
-        "Upgraded the Halton Vaccination project from .Net to React with RESTful APIs, modernizing the platform for scalability and usability.",
-        "Managed source code using Git, ensuring proper version control and collaboration.",
-        "Led Agile sprint planning and collaborated cross-functionally to improve project execution and team productivity.",
-        "Demonstrated strong analytical and problem-solving skills in resolving complex issues.",
+        "Improved Halton web applications using HTML5, CSS3, JavaScript/TypeScript, jQuery, and React with a focus on front-end optimization and UX, achieving a 32% faster page load time and an 8% increase in user interaction.",
+        "Developed and maintained scalable CSS preprocessor stylesheets using SASS and LESS, introducing reusable mixins and functions, increasing code maintainability and reusability by 40%.",
+        "Engineered responsive, mobile-first web designs with cross-browser compatibility, enhancing performance across devices.",
+        "Designed and optimized SQL queries and stored procedures to enhance read/write performance, resulting in a 12% decrease in database warehouse load.",
+        "Integrated session-aware RESTful APIs to streamline frontend-backend communication, improving responsiveness by 25% and refining the user experience by 15%.",
+        "Wrote unit tests and end-to-end tests to ensure feature stability and reliability, maintaining a code coverage threshold of 90%.",
+        "Integrated GitHub Actions to automate build, test, and deployment workflows, achieving 99.9% uptime and reducing manual errors in the Halton Vaccination project.",
+        "Collaborated with product managers, designers, and backend engineers to deliver projects on time, improving delivery efficiency and reducing time-to-market by one sprint."
       ],
     },
     {
-      id: 1,
-      showFullDescription: false,
       date: "Feb 2024 - May 2024",
-      title:
-        "Frontend Developer (contract) at Regina Residential Resource Centre.",
+      title: "Frontend Developer (contract)",
+      company: "Regina Residential Resource Centre.",
       description: [
-        "Designed and optimized UI components using JavaScript, React, HTML / Tailwind and Bootstrap CSS, contributing to 6% increase in returning users due to an improved user experience and visual design of the website's interface.",
-        "Developed complex SQL queries to support advanced search functionality and data visualization tools.",
-        "Designed new layouts using Figma to make attractive web designs.",
-        "Ensured cross-browser compatibility and WCAG accessibility compliance improving inclusivity and usability.",
-        "Utilized JIRA, Bitbucket, and Agile methodologies for efficient project management and cross-functional collaboration.",
-        "Demonstrated excellent communication and collaboration skills while working in a fast-paced team environment.",
-        "Ensured data integrity and optimized database performance in SQL Server environments.",
+        "Spearheaded and fine-tuned UI components using JavaScript, React, HTML / Tailwind, and Bootstrap CSS, contributing to a 6% increase in returning users due to an upgrade in user experience and visual design of the website's interface.",
+        "Integrated and calibrated over 5 third-party APIs, improving real-time data display efficiency by 30% and reducing API call latency by 9%.",
+        "Delivered 3 user interface layouts using Figma, leading to a 19% improvement in user engagement due to visually appealing designs.",
+        "Ensured cross-browser compatibility and WCAG 2.1 Level AA compliance, enriching accessibility for users with disabilities by 23%.",
+        "Orchestrated secure data handling and user authentication using token-based access control and role-based permissions.",
+        "Streamlined project workflows in JIRA, boosting sprint completion rates by 15% through Agile practices and cutting deployment time by 20% via Bitbucket integration."
+      ]
+    },
+    {
+      date: "May 2019 - Dec 2022",
+      title: "Frontend Engineer",
+      company: "Infojini",
+      description: [
+        "Engineered a dynamic and responsive website using HTML, CSS, JavaScript/TypeScript, React, Angular, and jQuery, integrating RESTful and GraphQL APIs to enhance UX and cut page load times by 35%.",
+        "Elevated performance by 9% through strategic code refactoring, resource optimization, and the adoption of lazy loading.",
+        "Achieved an 8% increase in multi-browser traffic by fine-tuning cross-browser compatibility across all applications.",
+        "Developed a chatbot for the Infojini Talent Dome site using JavaScript, React, and Redux, dropping manual support efforts by 57%.",
+        "Led team of 3 junior developers, fostering collaboration and upholding code quality through peer mentorship and reviews.",
+        "Validated code integrity and functionality via robust unit testing with Jest and end-to-end testing frameworks, aligning with industry best practices."
       ],
     },
     {
-      id: 1,
-      showFullDescription: false,
-      date: "May 2019 - Dec 2023",
-      title: "Frontend Developer at Infojini.",
-      description: [
-        "Designed an interactive, seamless, and dynamic website using JavaScript frameworks such as React, Angular, jQuery, with RESTful API’s and React Native for a better experience and reduced web page loading speed by 35%. ",
-        "Increased performance by 9% by optimizing code, resources and implementing lazy loading techniques. ",
-        "Ensure cross-browser compatibility for all web applications, leading to a 28% uplift in traffic from diverse browsers.",
-        "Build a Chatbot for the Infojini Talent Dome website using Javascript, React, and Redux to obtain seamless conversation results which reduced manual intervention by 23%.",
-        "Led bi-weekly stand up to ensure the team worked effectively and created boilerplate code to help onboard junior developers quickly.",
-        "Conducted comprehensive unit testing and end-to-end testing to ensure code quality and adherence to best practices.",
-        "Facilitated daily stand-up meetings to discuss project requirements and manage workload priorities.",
-      ],
-    },
-    {
-      id: 2,
-      showFullDescription: false,
       date: "Aug 2018 - May 2019",
-      title: "Web Developer at GVK",
+      title: "Web Developer",
+      company: "GVK",
       description: [
-        "Collaborated with UI/UX designers to translate wireframes and mockups into interactive, accessible, and responsive web pages using HTML, CSS, JavaScript and React.",
-        "Designed and developed customer support web applications using JavaScript and Angular to increase user engagement by 12%.",
-        "Developed dynamic, mobile-first user interfaces, cross-browser compatibility, and adhering to accessibility standards (WCAG).",
-        "Integrated client-side validation, error handling, and enhanced user experience through interactive UI components and animations.",
-        "Conducted comprehensive unit testing & end-to-end testing using Jest and React Testing Library to ensure high-quality, maintainable code.",
-        "Integrated client-side validation, error handling, and enhanced user experience through interactive UI components and animations.",
+        "Partnered with UI/UX designers to convert wireframes into responsive, interactive web pages using HTML, CSS, JavaScript, and React, accelerating delivery timelines by 15% due to component reusability.",
+        "Crafted customer support applications with JavaScript and Angular, driving a 12% increase in user engagement through intuitive workflows and real-time updates.",
+        "Delivered mobile-first, accessible interfaces compliant with WCAG 2.1 standards and ensured consistent behavior across major browsers.",
+        "Elevated user experience through client-side validation, error handling, and dynamic UI animations, curtailing bounce rates by 18%.",
+        "Strengthened code reliability through end-to-end testing with Jest and React Testing Library, scaling down post-deployment bugs by 30%."
       ],
     },
-  ]);
-
-  function onViewMore(data) {
-    const res = experienceList.map((value, index) => {
-      if (parseInt(value.id) === parseInt(data.id)) {
-        value.showFullDescription = !value.showFullDescription;
-        return value;
-      }
-      return value;
-    });
-    modifyExperienceList(res);
-  }
+  ];
 
   return (
     <section className="experience-page component-spacing" id="experience">
@@ -84,25 +65,20 @@ function Experience() {
       {/* timeline start */}
       <ul className="timeline">
         {experienceList.map((value, index) => {
-          const { date, title, description, showFullDescription } = value;
-          const descriptionClass = showFullDescription
-            ? "view-full-description"
-            : "";
-
+          const { date, title, description, company } = value;
           return (
             <li
               key={index}
-              className="timeline-item bg-white rounded ml-3 p-4 shadow"
-            >
+              className="timeline-item rounded ml-3 p-4 shadow">
               <div data-aos="fade-left">
                 <h2 className="h4 mb-0">{title}</h2>
-                <span className="small text-gray">
+                <span className="small">Company: {company} | </span>
+                <span className="small">
                   <i className="fa fa-clock-o mr-1"></i>
                   {date}
                 </span>
                 <ul
-                  className={`mt-3 description-content font-weight-light ${descriptionClass}`}
-                >
+                  className={`mt-3 description-content font-weight-light`}>
                   {description.map((value, index) => {
                     return (
                       <li key={index} className="description-list">
@@ -111,15 +87,11 @@ function Experience() {
                     );
                   })}
                 </ul>
-                <div className="view-more" onClick={(_) => onViewMore(value)}>
-                  {showFullDescription ? "View less" : "View more"}
-                </div>
               </div>
             </li>
           );
         })}
       </ul>
-      {/* timeline end */}
     </section>
   );
 }

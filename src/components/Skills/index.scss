@@ -1,55 +1,80 @@
+/* General Styles */
 .skills-page {
-  .progress_bar .pro-bar {
-    height: 6px;
-    margin-top: 30px;
-    position: relative;
-    margin-bottom: 12px;
-    background: #e4e4e4;
-    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+  padding: 20px;
+}
+
+.component-header,
+.component-sub-header {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.component-sub-header {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.skills-page .component-header {
+  margin-top: 40px;
+}
+
+/* Skills Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  width: 100%; /* Make it responsive */
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill Icon */
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+  .skill-card {
+    width: 48%; /* 2 items per row */
   }
-  .progress_bar .progress_bar_title {
-    color: #000;
-    font-size: 15px;
-    font-weight: 500;
-    position: relative;
-    top: -28px;
-    z-index: 1;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .skill-card {
+    width: 30%; /* 3 items per row */
   }
-  .progress_bar .progress_number {
-    float: right;
-    margin-top: 0;
-    color: #000;
-    font-weight: 500;
-  }
-  .progress_bar .progress-bar-inner {
-    background-color: hsl(0, 0%, 88%);
-    display: block;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: width 1s linear 0s;
-  }
-  .progress_bar .progress-bar-inner:before {
-    content: "";
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 50%;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    right: 1px;
-    top: 0;
-    z-index: 1;
-  }
-  .progress_bar .progress-bar-inner:after {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: inherit;
-    border-radius: 50%;
-    position: absolute;
-    right: -4px;
-    top: -5px;
+}
+
+@media (min-width: 992px) {
+  .skill-card {
+    width: 22%; /* 4 items per row */
   }
 }

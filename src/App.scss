@@ -41,7 +41,7 @@
 }
 
 .component-spacing {
-  padding: 5rem 2.5rem;
+  padding: 2rem;
 }
 
 .component-header {
@@ -51,6 +51,7 @@
   font-weight: 500;
   letter-spacing: 5px;
   margin-bottom: 15px;
+  text-align: left;
   border-bottom: 1px solid #ccc;
   text-transform: uppercase;
 }
@@ -61,7 +62,6 @@
   line-height: 1.8;
   font-weight: 700;
   position: relative;
-  margin-bottom: 3em;
   letter-spacing: 5px;
   text-transform: uppercase;
   background-color: #CA4246;

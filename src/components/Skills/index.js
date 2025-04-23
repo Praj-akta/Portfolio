@@ -1,121 +1,117 @@
 import React from "react";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaDocker, FaDatabase, FaLinux, FaWindows, FaApple } from 'react-icons/fa';
+import { SiRedux, SiFirebase, SiStripe, SiMysql, SiMongodb } from 'react-icons/si';
 import "./index.scss";
 
 function Skills() {
-  const programmingSkills = [
+  const skills = [
     {
       id: 1,
       name: "HTML",
-      color: "#1abc9c",
-      percentage: "95",
+      icon: <FaHtml5 />,
+      color: "orange",
     },
     {
       id: 2,
       name: "CSS",
-      color: "#f9bf3f",
-      percentage: "95",
+      icon: <FaCss3Alt />,
+      color: "#f0d715",
     },
     {
       id: 3,
       name: "JavaScript",
-      color: "#a84cb8",
-      percentage: "80",
-    },
-    {
-      id: 3,
-      name: "BootStrap CSS",
-      color: "#a84cb8",
-      percentage: "90",
-    },
-  ];
-  const frameworks = [
-    {
-      id: 1,
-      name: "React JS",
-      color: "#4054b2",
-      percentage: "90",
-    },
-    {
-      id: 2,
-      name: "React Hooks",
+      icon: <FaJs />,
       color: "#2c98f0",
-      percentage: "90",
-    },
-    {
-      id: 3,
-      name: "Angular JS (1.6)",
-      color: "#f9bf3f",
-      percentage: "75",
     },
     {
       id: 4,
-      name: "Redux",
-      color: "#a84cb8",
-      percentage: "90",
+      name: "Bootstrap CSS",
+      icon: <FaCss3Alt />,
+      color: "purple",
     },
     {
       id: 5,
-      name: "React Native",
-      color: "#a84cb8",
-      percentage: "85",
+      name: "React JS",
+      icon: <FaReact />,
+      color: "#4054b2",
     },
     {
       id: 6,
-      name: "Node JS",
-      color: "#3d3d3d",
-      percentage: "75",
+      name: "React Hooks",
+      icon: <FaReact />,
+      color: "#2c98f0",
     },
     {
       id: 7,
-      name: "Flutter",
-      color: "#1abc9c",
-      percentage: "70",
+      name: "Angular JS",
+      icon: <FaAngular />,
+      color: "red",
     },
-  ];
-  const databases = [
     {
-      id: 1,
+      id: 8,
+      name: "Redux",
+      icon: <SiRedux />,
+      color: "#a84cb8",
+    },
+    {
+      id: 9,
+      name: "React Native",
+      icon: <FaReact />,
+      color: "#a84cb8",
+    },
+    {
+      id: 10,
+      name: "Node JS",
+      icon: <FaNodeJs />,
+      color: "#3d3d3d",
+    },
+    {
+      id: 11,
+      name: "Database",
+      icon: <FaDatabase />,
+      color: "#1abc9c",
+    },
+    {
+      id: 12,
       name: "MySQL",
+      icon: <SiMysql />,
       color: "#4054b2",
-      percentage: "85",
     },
     {
-      id: 2,
+      id: 13,
       name: "MongoDB",
+      icon: <SiMongodb />,
       color: "#2c98f0",
-      percentage: "90",
     },
     {
-      id: 3,
+      id: 14,
       name: "Firebase",
+      icon: <SiFirebase />,
       color: "#f9bf3f",
-      percentage: "90",
     },
     {
-      id: 4,
+      id: 15,
       name: "Stripe",
+      icon: <SiStripe />,
       color: "#a84cb8",
-      percentage: "70",
     },
-  ];
-  const operatingSystems = [
     {
-      id: 1,
+      id: 16,
       name: "Mac",
+      icon: <FaApple />,
       color: "#2c98f0",
-      percentage: "80",
     },
     {
-      id: 2,
+      id: 17,
       name: "Windows",
+      icon: <FaWindows />,
       color: "#a84cb8",
-      percentage: "85",
     },
     {
-      id: 3,
+      id: 18,
       name: "Linux",
+      icon: <FaLinux />,
       color: "#1abc9c",
-      percentage: "82",
     },
   ];
 
@@ -123,129 +119,28 @@ function Skills() {
     <section className="skills-page component-spacing" id="skills">
       <div className="component-header"> my speciality </div>
       <div className="component-sub-header"> MY skills </div>
-      <div className="component-header"> programming languages </div>
-      {/* start of programming languages */}
+      {/* start of Skills Grid */}
       <div className="row mx-0 my-4">
-        {programmingSkills.map(({ name, percentage, color }, index) => {
-          return (
+        {skills.map(({ name, icon, color }, index) => (
+          <div
+            key={index}
+            className="skill-card col-md-2 col-sm-6 p-3"
+            style={{ textAlign: "center" }}>
             <div
-              key={index}
-              data-aos="fade-left"
-              className="progress_bar col-md-6 p-0 pr-3"
-            >
-              <div className="pro-bar">
-                <div className="progress_bar_title">
-                  {name}
-                  <span className="progress_number">{percentage}%</span>
-                </div>
-                <span
-                  className="progress-bar-inner"
-                  style={{
-                    backgroundColor: `${color}`,
-                    width: `${percentage}%`,
-                  }}
-                  data-value={percentage}
-                  data-percentage-value={percentage}
-                ></span>
-              </div>
+              className="skill-icon"
+              style={{ fontSize: "40px", color: color }}>
+              {icon}
             </div>
-          );
-        })}
-      </div>
-      {/* end of programming languages */}
-
-      <div className="component-header"> Frameworks </div>
-      {/* start of Frameworks */}
-      <div className="row mx-0 my-4">
-        {frameworks.map(({ name, percentage, color }, index) => {
-          return (
+            <div className="skill-name" style={{ marginTop: "10px" }}>
+              <span>{name}</span>
+            </div>
             <div
-              key={index}
-              data-aos="fade-left"
-              className="progress_bar col-md-6 p-0 pr-3"
-            >
-              <div className="pro-bar">
-                <div className="progress_bar_title">
-                  {name}
-                  <span className="progress_number">{percentage}%</span>
-                </div>
-                <span
-                  className="progress-bar-inner"
-                  style={{
-                    backgroundColor: `${color}`,
-                    width: `${percentage}%`,
-                  }}
-                  data-value={percentage}
-                  data-percentage-value={percentage}
-                ></span>
-              </div>
+              className="skill-percentage"
+              style={{ fontSize: "12px", color: "#777" }}>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-      {/* end of Frameworks */}
-
-      <div className="component-header"> Database </div>
-      {/* start of Database */}
-      <div className="row mx-0 my-4">
-        {databases.map(({ name, percentage, color }, index) => {
-          return (
-            <div
-              key={index}
-              data-aos="fade-left"
-              className="progress_bar col-md-6 p-0 pr-3"
-            >
-              <div className="pro-bar">
-                <div className="progress_bar_title">
-                  {name}
-                  <span className="progress_number">{percentage}%</span>
-                </div>
-                <span
-                  className="progress-bar-inner"
-                  style={{
-                    backgroundColor: `${color}`,
-                    width: `${percentage}%`,
-                  }}
-                  data-value={percentage}
-                  data-percentage-value={percentage}
-                ></span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      {/* end of Database */}
-
-      <div className="component-header"> Operating System </div>
-      {/* start of Operating System */}
-      <div className="row mx-0 my-4">
-        {operatingSystems.map(({ name, percentage, color }, index) => {
-          return (
-            <div
-              key={index}
-              data-aos="fade-left"
-              className="progress_bar col-md-6 p-0 pr-3"
-            >
-              <div className="pro-bar">
-                <div className="progress_bar_title">
-                  {name}
-                  <span className="progress_number">{percentage}%</span>
-                </div>
-                <span
-                  className="progress-bar-inner"
-                  style={{
-                    backgroundColor: `${color}`,
-                    width: `${percentage}%`,
-                  }}
-                  data-value={percentage}
-                  data-percentage-value={percentage}
-                ></span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      {/* end of Operating System */}
     </section>
   );
 }

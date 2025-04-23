@@ -7,23 +7,44 @@ const About = () => {
     <section className={`about-page component-spacing`} id="about">
       <div className="component-header"> About me </div>
       <div className="component-sub-header"> Who am i ? </div>
-      <div className="d-flex about-us-container">
-        <div className="profile-photo">
-          <img src={profileImg} alt="profile-img" />
-        </div>
+      <div className="about-us-container">
         <div className="details">
-          <h1> Prajakta Limje </h1>
-          <p>
-            Hi <strong>Fellas</strong>, I'm a recent graduate of Conestoga college with Post
-            Graduate Certificate in Web development with GPA 3.9/4. I'm looking for an opportunity
-            to work as a FrontEnd developer to produce intuitive and smooth applications and advance to full-stack development.
-          </p>
-          <p>
-            I have 5+ years of experience working as a Frontend Web Developer
-            in a company named Infojini Inc. I am quite proficient 
-            in <strong>HTML5, CSS, Javascript / Typescript, React, Hooks, Redux, Redux Saga, 
-            Angular, MongoDB, Firebase, Node JS, SQL, Git, Jira.</strong>
-          </p>
+          Hello! I’m Prajakta Limje, a passionate Frontend Software Developer with a strong commitment
+          to crafting intuitive, high-performing web applications. With a deep
+          understanding of modern web technologies, I specialize in building
+          dynamic and responsive user interfaces that deliver exceptional user
+          experiences. I am proficient in a variety of front-end tools and
+          frameworks, including <strong>React</strong>,{" "}
+          <strong>JavaScript/TypeScript</strong>, <strong>HTML5</strong>,{" "}
+          <strong>CSS3</strong>, and modern CSS preprocessors like{" "}
+          <strong>SASS</strong> and <strong>LESS</strong>, ensuring clean,
+          maintainable, and efficient code.
+          <br /> <br />
+          My expertise spans from designing{" "}
+          <strong>responsive, mobile-first web applications</strong> to
+          optimizing <strong>cross-browser compatibility</strong>, ensuring that
+          every user interaction is smooth and seamless across devices and
+          platforms. I am also experienced in integrating <strong>APIs</strong>,
+          both <strong>RESTful</strong> and <strong>GraphQL</strong>, to enhance
+          functionality and performance, and I prioritize{" "}
+          <strong>performance optimization</strong> to deliver faster and more
+          efficient applications.
+          <br /> <br />
+          With a solid understanding of <strong>backend integration</strong>,
+          including working with databases like <strong>MySQL</strong>,{" "}
+          <strong>MongoDB</strong>, and <strong>Firebase</strong>, as well as{" "}
+          <strong>cloud technologies</strong> such as <strong>AWS</strong>, I
+          bridge the gap between front-end and back-end systems to create
+          comprehensive, scalable solutions. I am also deeply committed to
+          maintaining high-quality code through <strong>unit testing</strong>{" "}
+          and <strong>end-to-end testing</strong>, ensuring stability and
+          reliability in every project. Driven by a passion for{" "}
+          <strong>problem-solving</strong> and{" "}
+          <strong>continuous learning</strong>, I thrive on challenges and enjoy
+          collaborating with teams to deliver innovative solutions that meet
+          both user needs and business goals. My focus is always on delivering
+          top-tier, accessible, and user-friendly applications that elevate the
+          digital experience.
         </div>
       </div>
     </section>

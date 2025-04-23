@@ -51,10 +51,9 @@ function App() {
         <div className="components-container">
           <Home />
           <About />
-          <Work />
-          <Skills />
-          <Education />
           <Experience />
+          <Skills />
+          <Work />
         </div>
       </div>
       {

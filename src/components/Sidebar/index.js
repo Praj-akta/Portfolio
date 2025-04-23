@@ -7,10 +7,9 @@ function Sidebar() {
   const navigationMenus = [
     { id: 0, name: "home" },
     { id: 1, name: "about" },
-    { id: 2, name: "work" },
+    { id: 2, name: "experience" },
     { id: 3, name: "skills" },
-    { id: 4, name: "education" },
-    { id: 5, name: "experience" },
+    { id: 5, name: "work" },
   ];
   function onMenuClick() {
     if (window.innerWidth < 769) {
