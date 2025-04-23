@@ -6,7 +6,6 @@ import Skills from './components/Skills';
 import Sidebar from './components/Sidebar';
 import { useWindowScroll } from 'react-use';
 import ArrowUp from './images/arrow-up.svg';
-import Education from './components/Education';
 import Experience from './components/Experience';
 import './App.scss';
 
