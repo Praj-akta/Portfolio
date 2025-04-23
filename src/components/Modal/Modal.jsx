@@ -2,25 +2,26 @@ import React from "react";
 import "./Modal.scss";
 
 const Modal = ({ project, onClose }) => {
+  const {title, subtitle, link, description} = project;
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>
           &times;
         </button>
-        <h2>{project.title}</h2>
-        <p className="subtitle">{project.subtitle}</p>
+        <h2>{title}</h2>
+        <p className="subtitle">{subtitle}</p>
         <p>
           <strong>Key Features:</strong>
           <ul className="full-description">
-            {project.description.map((point, index) => (
+            {description.map((point, index) => (
               <li key={index}>{point}</li>
             ))}
           </ul>
         </p>
-        {project.titleLink && (
+        {link && (
           <a
-            href={project.titleLink}
+            href={link}
             target="_blank"
             rel="noopener noreferrer"
             className="modal-link"

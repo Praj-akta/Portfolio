@@ -12,9 +12,8 @@ const Work = () => {
     {
       id: 1,
       imgUrl: img3,
-      showFullDescription: false,
       title: "Netflix Clone",
-      // titleLink: "https://react-netflix-clone-21b46.web.app",
+      link: "https://react-netflix-clone-21b46.web.app",
       subtitle: "A fully responsive and feature-rich clone of the Netflix platform, developed using modern web technologies to replicate core functionalities and provide a seamless user experience.",
       description: [
         "Developed using HTML/CSS, Tailwind CSS, React Hooks, Redux, Firebase, and Axios.",
@@ -29,10 +28,9 @@ const Work = () => {
     {
       id: 2,
       imgUrl: img2,
-      showFullDescription: false,
       title: "Amazon Clone",
       subtitle: "A fully responsive and secure full-stack e-commerce platform inspired by Amazon, developed using modern web technologies to replicate core shopping, payment, and user account features for a seamless retail experience.",
-      // titleLink: "https://clone-6e9aa.web.app",
+      link: "https://clone-6e9aa.web.app",
       description: [
         "Engineered a fully functional Amazon e-commerce clone using HTML, SCSS, React JS, Redux, Node JS, Firebase, Stripe, and Express JS.",
         "Implemented secure user authentication and data storage with Firebase, enabling users to register, log in, and manage order history effectively.",
@@ -45,31 +43,21 @@ const Work = () => {
         "Ensured mobile responsiveness and cross-browser compatibility to deliver a consistent experience across all devices."
       ]
     },
-    // {
-    //   id: 3,
-    //   imgUrl: img4,
-    //   showFullDescription: false,
-    //   title: "Food Website",
-    //   subtitle:
-    //     "(HTML/CSS, Bootstrap, Tailwind CSS, and JavaScript)",
-    //   description: `
-    //     Developed simple food website using just HTML, CSS, and JavaScript. Added animations to the website
-    //     to make it look user friendly and attractive. Using Bootstrap, the website is mobile-friendly and 
-    //     also checked the cross-browser compatability of this website.`,
-    // },
-    // {
-    //   id: 4,
-    //   imgUrl: img1,
-    //   title: "Employee Management System",
-    //   showFullDescription: false,
-    //   subtitle:
-    //     "(HTML/CSS, Bootstrap, React JS, React Hooks, Node JS, MongoDB)",
-    //   description: `
-    //     Developed an employee management system, where employee’s data can be created, updated, and deleted by performing CRUD operations.
-    //     Created functional components using React hooks, also MongoDB is used for data Storage. API integration is done
-    //     using Fetch API calls. Website has been developed and designed using HTML/CSS, Bootstrap and React JS.
-    //   `,
-    // },
+    {
+      id: 3,
+      imgUrl: img4,
+      title: "Bonefish Grill",
+      subtitle: "A visually captivating and interactive food website, crafted with HTML, CSS, and JavaScript, featuring smooth animations and a mobile-first design for a delightful culinary browsing experience, optimized for all screen sizes and browsers.",
+      link: "https://transcendent-piroshki-4011dc.netlify.app",
+      description: [
+        "Crafted a visually engaging and responsive food-themed website using HTML, CSS, and JavaScript, with a strong focus on clean UI design and seamless UX.",
+        "Implemented interactive animations and transitions to elevate user experience and visual appeal.",
+        "Leveraged Bootstrap to ensure a mobile-first, responsive layout adaptable across all screen sizes.",
+        "Designed intuitive page layouts with emphasis on visual hierarchy, color balance, and typographic clarity.",
+        "Manually tested and ensured cross-browser compatibility for consistent performance across major browsers.",
+        "Applied modern front-end best practices to create a polished, accessible interface that enhances user engagement."
+      ],
+    }
   ]
   const handleProjectClick = (project) => {
     setSelectedProject(project);
