@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import img4 from "../../images/1.png";
-import img1 from "../../images/EMS.png";
+import img1 from "../../images/img1.png";
 import img2 from "../../images/amazon-clone.png";
 import img3 from "../../images/netflix-clone.png";
 import Modal from "../Modal/Modal";
@@ -56,6 +56,21 @@ const Work = () => {
         "Designed intuitive page layouts with emphasis on visual hierarchy, color balance, and typographic clarity.",
         "Manually tested and ensured cross-browser compatibility for consistent performance across major browsers.",
         "Applied modern front-end best practices to create a polished, accessible interface that enhances user engagement."
+      ],
+    },
+    {
+      id: 4,
+      imgUrl: img1,
+      title: "Next Wanderlust",
+      subtitle: "A dynamic tourism website built with HTML, CSS, Bootstrap, and ReactJS, offering detailed travel destination information. Designed for a mobile-first, responsive experience across all devices and browsers.",
+      link: "https://praj-akta.github.io/Next-wanderlust/",
+      description: [
+        "Developed a tourism website using HTML, CSS, Bootstrap, and ReactJS to provide detailed information about various travel destinations.",
+        "Implemented a mobile-first, responsive layout using Bootstrap for a seamless browsing experience across devices.",
+        "Used ReactJS to create dynamic, interactive components for a smooth user interface.",
+        "Designed visually appealing and well-structured pages with a focus on clear information presentation and easy navigation.",
+        "Ensured cross-browser compatibility and optimized the website for faster load times and better performance.",
+        "Followed best practices for clean code and reusable components to enhance maintainability and scalability."
       ],
     }
   ]
