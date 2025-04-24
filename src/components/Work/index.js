@@ -10,22 +10,6 @@ const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const workList = [
     {
-      id: 1,
-      imgUrl: img3,
-      title: "Netflix Clone",
-      link: "https://react-netflix-clone-21b46.web.app",
-      subtitle: "A fully responsive and feature-rich clone of the Netflix platform, developed using modern web technologies to replicate core functionalities and provide a seamless user experience.",
-      description: [
-        "Developed using HTML/CSS, Tailwind CSS, React Hooks, Redux, Firebase, and Axios.",
-        " Implemented user authentication with Firebase, allowing users to register or sign in securely using their email and password.",
-        "Built a personalized 'My List' feature where users can add and manage favorite movies.",
-        " Integrated the TMDB (The Movie Database) API via Axios to dynamically fetch movie data including posters, titles, and descriptions.",
-        "Utilized Redux for global state management, ensuring smooth data flow and consistent application behavior.",
-        "Optimized for responsive design and cross-browser compatibility, ensuring consistent performance across devices and platforms.",
-        "Firebase used for real-time data storage, including user credentials and favorite movie lists."
-      ],
-    },
-    {
       id: 2,
       imgUrl: img2,
       title: "Amazon Clone",
@@ -72,7 +56,23 @@ const Work = () => {
         "Ensured cross-browser compatibility and optimized the website for faster load times and better performance.",
         "Followed best practices for clean code and reusable components to enhance maintainability and scalability."
       ],
-    }
+    },
+    {
+      id: 1,
+      imgUrl: img3,
+      title: "Netflix Clone",
+      link: "https://react-netflix-clone-21b46.web.app",
+      subtitle: "A fully responsive and feature-rich clone of the Netflix platform, developed using modern web technologies to replicate core functionalities and provide a seamless user experience.",
+      description: [
+        "Developed using HTML/CSS, Tailwind CSS, React Hooks, Redux, Firebase, and Axios.",
+        " Implemented user authentication with Firebase, allowing users to register or sign in securely using their email and password.",
+        "Built a personalized 'My List' feature where users can add and manage favorite movies.",
+        " Integrated the TMDB (The Movie Database) API via Axios to dynamically fetch movie data including posters, titles, and descriptions.",
+        "Utilized Redux for global state management, ensuring smooth data flow and consistent application behavior.",
+        "Optimized for responsive design and cross-browser compatibility, ensuring consistent performance across devices and platforms.",
+        "Firebase used for real-time data storage, including user credentials and favorite movie lists."
+      ],
+    },
   ]
   const handleProjectClick = (project) => {
     setSelectedProject(project);
